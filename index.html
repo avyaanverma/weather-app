@@ -4,20 +4,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./weather-app-img/images/clouds.png" type="image/x-icon">
     <title>Weather App by Avyaan Verma</title>
   </head>
   <body>
     <div class="card">
       <div class="search">
-        <input type="text" placeholder="enter city name" spellcheck="false">
+        <input id="input" type="text" placeholder="enter city name" spellcheck="false">
         <button><img src="./weather-app-img/images/search.png" class ="searchpng" alt=""></button>
       </div>
       <div class="weather">
         <img src="./weather-app-img/images/rain.png" alt="" class="weather-icon">
         <h2 class="temp">22&degC</h2>
-        <h2 class="city">Chandigarh</h2>
+        <h2 class="city" id="city">Chandigarh</h2>
       </div>
+      <div class="hum">
+        <div class="humidity">
+          <img src="./weather-app-img/images/humidity.png" alt="">
+          <h2 class="humidity1"></h2>
+        </div>
+        <div class = "wind">
+          <img src="./weather-app-img/images/wind.png" alt="">
+          <h2 class="wind1"></h2>
+        </div>
+      </div>
+      
     </div>
   </body>
-
+<script src="script.js"></script>
 </html>
